@@ -1,0 +1,27 @@
+.page-title {
+   color: whitesmoke; 
+}
+
+.sidebar-story {
+    color:green;
+    border: 2px;
+    border-color: yellow;
+    float: left;
+    width:20%;
+}
+.main-story {
+    color:green;
+    border: 2px;
+    border-color: yellow;
+    float: left;
+    width:60%;
+}
+.height-control-top { /*not fully integrated yet*/
+    align-items: stretch;
+    height:800px;
+}
+
+.height-control-bottom { /*not fully integrated yet*/
+    align-items: stretch;
+    height:400px;
+}
