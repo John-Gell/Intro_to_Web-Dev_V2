@@ -1,8 +1,8 @@
 # CSS
 ## The Box Model
 - Display
--- 'inline' use this to get any tag to display like inline text
--- 'block' 
+  - 'inline' use this to get any tag to display like inline text
+
 
 
 # Formatting Notes
