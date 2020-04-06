@@ -1,27 +1,71 @@
-.page-title {
-   color: whitesmoke; 
+h1 { /* PAGE TITLE*/
+    font: size 3em;
+    font-family: "Consolas";
+}
+
+h2 {    /*STORY TITLE*/
+    font: size 2em;
+    font-family: "Consolas";
+}
+
+.centered { /*modifier used in multiple locations, mostly titles*/
+    text-align:center;
+}
+    
+.flex-container { /*this holds both the bottom and top rows of content*/
+    display: flex;
+    width:100%;
+}
+.flex-container-vert-stack {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+
+}
+.main-story {
+    color:blue;
+    border: solid 2px;
+    border-color: blue;
+    width:50%;
+    padding:10px;
 }
 
 .sidebar-story {
-    color:green;
-    border: 2px;
-    border-color: yellow;
-    float: left;
-    width:20%;
-}
-.main-story {
-    color:green;
-    border: 2px;
-    border-color: yellow;
-    float: left;
-    width:60%;
-}
-.height-control-top { /*not fully integrated yet*/
-    align-items: stretch;
-    height:800px;
+    color:red;
+    border: solid 2px;
+    border-color: red;
+    width:25%;
+    min-width:25%;
+    padding:10px;
 }
 
-.height-control-bottom { /*not fully integrated yet*/
-    align-items: stretch;
-    height:400px;
+.link {
+    text-align: left;
+    font: size 2em;
+    font-family: "Consolas";
+    padding:30px;
+    flex-grow:1;
+    margin:0px;
+    box-sizing:border-box;
+    align-items:center;
+}
+
+.link-1 { /*styling indicator for the fake links at the bottom right ofthe screen*/
+    background-color: #492B19;
+}
+
+.link-2 { /*styling indicator for the fake links at the bottom right ofthe screen*/
+    background-color: #CD5B17;
+}
+
+.link-3 { /*styling indicator for the fake links at the bottom right ofthe screen*/
+    background-color: #E88B41;
+}
+
+.link-4 { /*styling indicator for the fake links at the bottom right ofthe screen*/
+    background-color: #D0BEA6;
+}
+
+.link-5 { /*styling indicator for the fake links at the bottom right ofthe screen*/
+    background-color: #002AD5;
 }
