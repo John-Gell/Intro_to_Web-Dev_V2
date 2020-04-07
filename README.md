@@ -15,6 +15,9 @@
    - no spaces
    - can not be changed (see `let`)
  - Control Flow: fancy term for thesuing if and for loops and similar item.
+ - Control Variable: This is the `i` or `j` term that is used in a for loop.
+ - Index: this is the spot in the matrix that an item is occupying
+  - For example, given string `0,1,2,3,4,5` index 4 has a value of 3. As an alternate example, given string `1,2,3,4,5,6` index 4 has a value of 4. 
  - Keyword: commands to start off the line letting javascript know there is an item coming. 
  - Let: delcaring a variable 
    - no spaces
@@ -27,8 +30,13 @@
  ## General Advice
  - Use as many variables as possible 
  - "Principle of least power" - always chose the least pwerful "thing" to accomplish whaterver you're trying to do. 
+ - In coding, counting goes from 0 up not from 1 (see `index` in vocab)
  ## Commands used in Toutorial
  -  `console.log()` - this logs whatever you put in the function to the JS command console.
+ - `for (let i = 0; i <=10; i++) {...}` run the code inside the parens for eleven cycles.
+   - `let i = 0; - this is defining the control variable
+   - `i <= 10; - this is detting a while loop type restriction
+   - `i++` - increments the control variable every time the code whithin the loop runs.
  ## Santax Points likley to be useful
  - strings can include variable with the following 
    - `Hello ${variableOne} ${variableTwo}! How are you?`
@@ -40,10 +48,15 @@
  - greater than, greater than or equal to, or vice versa act as expected
    - >= or <=
 ### Incrementing shortcuts
-  - `friendsAtYourParty = friendsAtYourParty + 1;`
-  - `friendsAtYourParty += 1;`
-  - `friendsAtYourParty++;`
-  - `++friendsAtYourParty;`
+  - All four of these lines are equivilant  
+    - `friendsAtYourParty = friendsAtYourParty + 1;`
+    - `friendsAtYourParty += 1;`
+     - This can also be edited to include any number after the `+=`
+     - also works with the other operators
+      - `**=` is exponent
+    - `friendsAtYourParty++;`
+    - `++friendsAtYourParty;`
+     - don't use this one, people thinkit's weird 
  
  
    
