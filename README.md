@@ -8,6 +8,7 @@
   - `inline` use this to get any tag to display like inline text
  # JavaScript
  ## Vocab 
+ - **aON.:** This is a shorthand I am using to mean Array or Object Name, primarly used for making notes on **methods**
  - **Arrays:** these are similar to **objects** but are ordered.
    - declared using `const arrayName = [ value0,value1,value2,value3]` (note the square brackets)
  - **booleans:** Simple true or false statements, used everywhere
@@ -21,15 +22,15 @@
  - **Context:** Important for keywords like `this` is basically the smallest "div" that you are in. 
    - "A good rule of thumb (that is unfortunately not always true) is that if you're inside an object of some sort, the this will be that object. If not, it'll be the global object, window. "
  - **Control Flow:** fancy term for thesuing if and for loops and similar item.
- - **Control Variable:** This is the `i` or `j` term that is used in a for loop.
+ - **Control Variable:** This is the `i` or `j` term that is used in a for loop. 'i' is the prefered variable for JS
  - **Global Scope:** These are variables that apply across the entirety of the code section. 
  - **Index:** this is the spot in the matrix that an item is occupying
-  - For example, given string `0,1,2,3,4,5` index 4 has a value of 3. As an alternate example, given string `1,2,3,4,5,6` index 4 has a value of 4. 
+   - For example, given string `0,1,2,3,4,5` index 4 has a value of 3. As an alternate example, given string `1,2,3,4,5,6` index 4 has a value of 4. 
  - **Keyword:** commands to start off the line letting javascript know there is an item coming.
- - **Keys:** this is how data is ordered in an *object* the key is on the left side of the `:`
+ - **Keys:** this is how data is ordered in an **object** the key is on the left side of the `:`
  - **Let:** delcaring a variable 
    - no spaces
-   - this is a true variable, see `const` for constants
+   - this creates a true variable, see **const** for constants
  - **Method:** a function that acts on an **Object** or **Array** 
    - called with `objectOrArrayName.methodName()`
  - **Number:** There is just one kind of number for JS no need to worry about other types like float or otherwise.
@@ -66,19 +67,29 @@
    - `i <= 10; - this is detting a while loop type restriction
    - `i++` - increments the control variable every time the code whithin the loop runs.
  - `function functionName(inputVariable) {contents of function}`
-   - example: `function addTwo(number) { return number + 2; }
+   - example: `function addTwo(number) { return number + 2; }`
     - this creates a function called `addTwo` with the input of a number and the output of that number plus two increments. 
+    
+ ### Methods 
  - `objectName.length()` - This is a **method**, returning the length of the object or array that is listed. 
- - `arrayName.join("deliminating characters for example " , " or " | "` converts an **array** into a single text string.
+ - `arrayName.join("deliminating characters for example " , " or " | ")` converts an **array** into a single text string.
+ - `.forEach()` - this takes a function and applies it to each individual item in the array or object.
+  - This looks like this:
+    - `arrayName.forEach(functionToBeApplied){});
+  - However, this is more complex than required because the funciton that is being applied is usually prettly local to this particular **method** This means that the actual use will look closer to something like this. 
+    - `arrayName.forEach(function(item, index,array) { some sort of logging function or another maniuplation });
+     - this is useful because it reduces the number of funcitons and looks cleaner. 
+     - go to this youtube video for more information: https://www.youtube.com/watch?v=159EAISAxwg
+ 
  
  ## Santax Points likley to be useful
  - strings can include variable with the following 
    - `Hello ${variableOne} ${variableTwo}! How are you?`
-     -This will create a string with the variables plugged into the exact location of the ${...}'s meaning that any spaces included are useful
+     -This will create a string with the variables plugged into the exact location of the ${...}'s meaning that any spaces included in the string are expressed in the final product.
  - `=` means *is assigned to*
- - `==` means something similar to tripple equals but different
- - `===` means *is this equal to that*
- - `!==` means *is this NOT equal to that*
+ - `==` means something similar to tripple equals but different, this gets very into the nuances and I won't need this for this level of programming. 
+ - `===` means *IS this equal to that*
+ - `!==` means *IS this NOT equal to that*
  - greater than, greater than or equal to, or vice versa act as expected
    - `>=` or `<=`
  - call a nested function from inside an object `objectName.functionName`
@@ -96,7 +107,7 @@
      - don't use this one, people thinkit's weird 
 ## Objects
 - See definition above 
-- To call a key, santax is `objectName.keyName`
+- To call a property using it's key, the santax is: `objectName.keyName`
   -this calls the object and then the specific value that you want 
 - Objects can be nested 
 - if a function is within an object, it can be called outside of the object, for example given object `dog` with the nested function `speak` you can call the nested function with `dog.speak`
