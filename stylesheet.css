@@ -1,0 +1,66 @@
+
+.output-field {
+    width: 100%;
+    background-color: #2C321C;
+    text-align: right;
+    color: #D8E6F1;
+    font-size: 16px;
+    width: 500px;
+    padding: 15px;
+    margin: 0px;
+    border: solid #616B2C 2px;
+    box-sizing: border-box;
+}
+.button-container{
+    display: flex;
+    width: 500px;
+    background-color: #616B2C;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin-bottom: 0.25%;
+}
+.button {
+    display: flex;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0.25%;
+    color: #D8E6F1;
+}
+
+.number {
+    background-color: #9AAB1D;
+}
+
+.function {
+    background-color: #4CAF50; 
+}
+
+.clear {
+    background-color: grey; 
+}
+
+.delete {
+    background-color: grey; 
+}
+
+.equals {
+    background-color: #4CAF50; 
+}
+
+.standard {
+    width: 24.5%;
+}
+
+.wide {
+   width: 49.5%;
+}
+
+.x-wide {
+    width: 74.25%;
+}
