@@ -8,6 +8,27 @@
   - **class:** Allows for the attribution of CSS properties to a HTML tag.
 ### Input
   - **placeholder:** This gives a value to display into an input box prior to user entry.
+### Basic HTML framework to start off with 
+take this from the text editor and remove the backticks (`) at either end. 
+`<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+</body>
+</html>`
+
 ## Tags
 - `script` - brings in JS (Java Script) onto the page 
   - goes in the body of the page 
@@ -101,7 +122,7 @@
      - go to this youtube video for more information: https://www.youtube.com/watch?v=159EAISAxwg
  
  
- ## Santax Points likley to be useful
+ ## Syntax Points likley to be useful
  - JS exclusivley uses **camelCasing** not **kebab-casing** like CSS does so make sure that is used, especially when working with **DOM** **methods**.
  - strings can include variable with the following 
    - `Hello ${variableOne} ${variableTwo}! How are you?`
@@ -168,7 +189,36 @@ Multiple **methods** can be used to interract some examples are below
 -   `.querrySelectorAll`: selects _all_ of a querry
 - `.style.`: object that is used to store all of the CSS styles that are being applied to the object at that time. 
 
+## Troubleshooting 
+### Is the script linked to the HTML properly? 
+ `  let d = new Date();
+alert("Today's date is " + d);`
+- This will create an alert that will tell todays date. If it shows, it works. 
  
+# AJAX
+- this is basically recontacting the server for more informaiton after the page has been loaded
+- stands for Asynhrounous JavaScript And XML
+  - this isn't really a good indicator of what it does, is grandfathered in. 
+## Vocab for AJAX
+- **fetch**: is the root browser function used to reach out to the server again 
+  - returns a **promise**
+-**JSON**: Java Script Object Notation, this is the format typically used to exchange data over the internet. 
+- **promise**: allows the page to load things asynchronously. An example is like if you have a web page but want to insert content into the middle of it from an API but don't want to wait for that response for the information to load prior to loading the rest of the page. 
+-**promise chaining**: this is like setting up a to do list for the browser to execute of promises. Uses the `.then` method. Syntax looks something like this:
+
+    ```
+    promise    
+        .then(function(response) {      
+        const processingPromise = response.json();        
+        return processingPromise;        
+        })      
+        .then(function(processedResponse) {      
+        console.log(processedResponse);        
+    }); 
+    ```    
+-**`then`**: method waits for something to happen then comits the rest of the contained whitin the curls. 
+
+
    
  
 
