@@ -218,7 +218,21 @@ alert("Today's date is " + d);`
     ```    
 -**`then`**: method waits for something to happen then comits the rest of the contained whitin the curls. 
 
-
+# integration with other's libraries
+- this a great way to get a ton of functionality with little programming. 
+- examples include the Popmotion library [link](https://popmotion.io/)
+ - this will give access to a bunch of animation functionality
+# Building your code
+- in order to build the code and run JS on your computer. This is done with a NPM or Node Package Manager? (there seemes to be some controvercy about this) 
+ - the one suggested by this course is node.js 
+ - this is useful because it allows me to use the Parcel 
+   - parcel is a web application bundler/build tool 
+   - Parcel and other web application bundlers/build tools are useful for three main reasons
+    - in staid of downloading all scripts in the head a browser will only load scripts are needed to run the page as intended, reducing the total server calls. 
+    - code splitting
+     - this allows for the browser to download the individual packets of code required to run the page, again, reducing the server calls by allowing code packets to be carried over between pages on the site. 
+     - transformations, can shift the code that you are using to read better by all browsers by changing them to vanilla JS or away from other backend stuff (still don't grasp this yet)
+     
    
  
 
