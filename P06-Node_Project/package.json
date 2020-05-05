@@ -1,7 +1,6 @@
 {
-  "name": "P06-Node_Project",
+  "name": "p06-node_project",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
