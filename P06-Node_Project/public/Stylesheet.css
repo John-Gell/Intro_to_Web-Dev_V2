@@ -1,0 +1,68 @@
+.header-image {
+    background-image: url(Header-image.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-title {
+    font-family: Brush Script MT;
+    text-align: center;
+    font-size: 3em;
+    padding: 15px;
+    color: white;
+    font-weight: lighter;
+    width: 100%;
+    flex-grow: 100%;
+    align-self: middle;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.body-block {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center middle;
+    
+}
+
+.category { 
+    color: white;
+    font-family: Brush Script MT;
+    font-weight: lighter;
+    flex-basis:1;
+    align-self: center; 
+    flex-grow: 1;
+    font-size: 2em;
+    margin-bottom: 2px;
+
+}
+.response {
+    color: white;
+    font-family: Brush Script MT;
+    font-weight: lighter;
+    font-size: 2em;
+    align-self: center;
+    flex-grow: 1;
+}
+.button {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 15px;
+    align-self: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    flex-grow: 2;
+}
+
